@@ -1,0 +1,34 @@
+function evenDigit(a,b){
+
+let num=0;
+let digit=0;
+let str="";
+
+while(b>=a){
+num =a;
+let bool=true;
+
+while(num>0){
+  digit=num%10;
+  if(digit%2!==0){
+
+    bool=false;
+    break;
+  }
+  num=(num-digit)/10;
+}
+if(bool===false){
+  a++;
+  continue;
+}
+
+if(bool===true){
+str=str+a+",";
+a++;
+}
+}
+if(str===""){
+  str="Such numbers does not exist."}
+return str;
+}
+console.log(evenDigit(1000,10000));
