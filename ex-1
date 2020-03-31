@@ -1,0 +1,15 @@
+function asd(arr,a){
+
+    let newArr=[];
+    let j=0;
+    for(let i=0;i<=arr.length;i++){
+
+       if(arr[i]>a){
+        newArr[j]=arr[i];
+        j++;
+       }
+    }
+      return newArr;
+    }
+  
+  asd([1,2,-3,5,-9,8,23,21,-10],-5);
