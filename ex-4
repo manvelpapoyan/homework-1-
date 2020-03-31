@@ -1,0 +1,20 @@
+function largestProduct(arr){
+  
+ let largest=0;
+
+  for (let i=0;i<=arr.length;i++){
+  
+  let product=arr[i]*arr[i+1];
+  
+  if(product>=largest){
+    
+    largest=product;
+  }
+  
+}
+  return largest;
+}
+  
+let arr=[1,2,3,100,4,5,6,200,7,8];
+
+console.log(largestProduct(arr));
