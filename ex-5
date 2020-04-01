@@ -1,0 +1,16 @@
+let arr=[1,9,8,6,7,5,-3,25,2,3,4];
+let j=0;
+
+arr.sort(function(a,b){
+    return a-b;
+});
+for (let i=0;i<arr.length;i++){
+ 
+    if(arr[i]+1!==arr[i+1]){
+
+        for(let k=arr[i];k<arr[i+1]-1;k++){
+            j++;
+        }
+    }
+}
+console.log(j);
