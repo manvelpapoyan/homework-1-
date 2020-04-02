@@ -1,0 +1,19 @@
+function asd(arr){
+let newArr=[];
+let j=0;
+for(let i=0;i<arr.length;i++){
+
+if(arr[i]%2!==0){
+
+   newArr[j]=arr[i];
+   j++;
+   
+}
+}
+for(let k=0;k<j;k++){
+newArr[k]=newArr[k]*j;   
+}
+return newArr;
+}
+
+console.log(asd([5, 4, 78, 0, -3, 7]))
